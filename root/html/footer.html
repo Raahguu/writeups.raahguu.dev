@@ -1,0 +1,74 @@
+<footer>
+    <p id="dateUpdatedForFooter"></p>
+    <p>Raahguu © <script>document.write(new Date().getFullYear())</script></p> <!-- Script gets the current year -->
+    <p><a href="https://github.com/Raahguu"><img src="/root/images/GithubLogo.svg"></a></p>
+    <p>This page is powered by Github Pages.</p>
+</footer>
+
+<script>
+const desiredRepo = "raahguu.github.io";
+const dateTagID = "dateUpdatedForFooter";
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function()
+{
+  if (this.readyState == 4 && this.status == 200)
+  {
+    let repos = JSON.parse(this.responseText);
+
+    repos.forEach((repo)=>{
+      if (repo.name == desiredRepo)
+      {
+        var lastUpdated = new Date(repo.updated_at);
+        var day = lastUpdated.getUTCDate();
+        var month = lastUpdated.toLocaleDateString('default', {month: 'long'});
+        var year = lastUpdated.getUTCFullYear();
+        document.getElementById(dateTagID).innerText = `Last updated: ${month} ${ordinal_suffix_of(day)}, ${year}`;
+      }
+    });
+  }
+};
+xhttp.open("GET", "https://api.github.com/users/raahguu/repos", true);
+xhttp.send();
+
+function ordinal_suffix_of(i) {
+    let j = i % 10,
+        k = i % 100;
+    if (j === 1 && k !== 11) {
+        return i + "st";
+    }
+    if (j === 2 && k !== 12) {
+        return i + "nd";
+    }
+    if (j === 3 && k !== 13) {
+        return i + "rd";
+    }
+    return i + "th";
+}
+</script>
+
+<style>
+body{
+    margin: 0px;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #111;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+footer *{
+    text-align: center;
+    color: grey;
+}
+
+footer p a img{
+    width: 40px;
+    height: 40px;
+}
+</style>

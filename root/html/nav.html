@@ -1,5 +1,10 @@
+<nav>
+  <li><a class="currentSite" href="/">Home</a></li>
+  <li><a href="/root/about">About</a></li>
+</nav>
+
 <style>
-ul.navbar{
+nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -8,13 +13,14 @@ ul.navbar{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
-.navbar li {
+nav li {
   float: left;
 }
 
-li a {
+nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -22,16 +28,11 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.currentSite) {
+nav li a:hover:not(.currentSite) {
   background-color: #111;
 }
 
-li a.currentSite {
+nav li a.currentSite {
   background-color: #ea5f1f;
 }
 </style>
-
-<ul class = "navbar">
-    <li><a class="currentSite" href="/">Home</a></li>
-    <li><a href="/root/about.html">About</a></li>
-</ul>
