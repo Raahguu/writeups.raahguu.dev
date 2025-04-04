@@ -1,0 +1,6 @@
+/* Hide the Scroll Bar */
+body {
+    scrollbar-width: none; /* Firefox */
+    overflow-x: hidden;
+    margin: 0;
+}
