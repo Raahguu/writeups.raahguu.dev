@@ -5,6 +5,23 @@ body {
     margin: 0;
 }
 
-iframe{
+.fullIframe{
     border: none;
+    overflow: show;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+iframe.fullIframe[title="Footer"]{
+    bottom: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+iframe.fullIframe[title="NavBar"]{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
 }
