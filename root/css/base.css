@@ -21,7 +21,7 @@ iframe.fullIframe[title="Footer"]{
     position: absolute;
     z-index: 100;
     overflow: hidden;
-    height: 185;
+    height: 185px;
 }
 
 iframe.fullIframe[title="NavBar"]{
