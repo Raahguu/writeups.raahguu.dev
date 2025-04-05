@@ -17,10 +17,11 @@ iframe.fullIframe[title="Footer"]{
     bottom: 0;
     position: absolute;
     z-index: 100;
+    overflow: hidden;
 }
 
 iframe.fullIframe[title="NavBar"]{
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
     overflow: hidden;
