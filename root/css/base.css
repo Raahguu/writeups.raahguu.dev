@@ -51,3 +51,9 @@ nav li a:hover:not(.currentSite) {
 nav li a.currentSite {
     background-color: #ea5f1f;
 }
+
+/* All Text */
+body {
+    text-align: center;
+    color: black;
+}
