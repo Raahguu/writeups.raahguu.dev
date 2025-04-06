@@ -9,25 +9,45 @@ body::-webkit-scrollbar{
     display: none; /* Chrome, Safari, and Opera */
 } 
 
-.fullIframe{
-    border: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
+/* Footer */
 iframe.fullIframe[title="Footer"]{
     bottom: 0;
     position: absolute;
     z-index: 100;
     overflow: hidden;
     height: 185px;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-iframe.fullIframe[title="NavBar"]{
-    position: sticky;
-    top: 0;
-    z-index: 100;
+/* Nav Bar */
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    height: 45px;
+    background-color: #333;
+    width: 100%;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover:not(.currentSite) {
+    background-color: #111;
+}
+  
+nav li a.currentSite {
+    background-color: #ea5f1f;
 }
