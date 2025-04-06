@@ -53,7 +53,7 @@ nav li a.currentSite {
 }
 
 /* All Text */
-body {
+body :not(iframe) {
     text-align: center;
     color: black;
 }
