@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /root/html/base.html
+Disallow: /README.md
