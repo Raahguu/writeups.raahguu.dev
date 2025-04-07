@@ -3,6 +3,7 @@ body {
     scrollbar-width: none; /* Firefox */
     overflow-x: hidden;
     margin: 0;
+    /* Flex stuff so items display nicely */
     display: flex;
     flex-direction: column;
 }
@@ -60,6 +61,7 @@ body :not(iframe) {
     color: black;
 }
 
+/* Canvas for games */
 canvas{
     width: 500px;
     height: 500px;
