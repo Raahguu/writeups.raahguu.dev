@@ -14,19 +14,17 @@
         <li><a href="/root/html/about">About</a></li>
         <li><a class="currentSite" href="/root/html/games/snake">Snake</a></li>
     </nav>
-    <body>
-        <h1>Snake</h1>
-        <canvas width="500px" height="500px" id="GameCanvas"></canvas>
-    </body>
-    
+    <h1>Snake</h1>
+    <canvas id="GameCanvas"></canvas>
+    <br>
     <script>
         const canvas = document.getElementById("GameCanvas");
         const ctx = canvas.getContext("2d");
     
         let alive = true;
         let boardSquares = 40;
-        let squareWidth = canvas.width/boardSquares;
-        let squareHeight = canvas.height/boardSquares;
+        let squareWidth = canvas.style.width/boardSquares;
+        let squareHeight = canvas.style.height/boardSquares;
     
         let frameRate = 10;
     
@@ -80,11 +78,11 @@
     
         function drawBoard(){
             //clear the canvas
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.clearRect(0, 0, canvas.style.width, canvas.style.height);
     
             //background
             ctx.fillStyle = boardColour;
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(0, 0, canvas.style.width, canvas.style.height);
     
             //draw snake
             ctx.fillStyle = snakeColour;
@@ -101,8 +99,8 @@
             //draw lines
             ctx.fillStyle = lineColour;
             for (let i = 0; i < boardSquares; i++) {
-                ctx.fillRect(squareWidth * i, 0, 1, canvas.height);
-                ctx.fillRect(0, squareHeight * i, canvas.width, 1);
+                ctx.fillRect(squareWidth * i, 0, 1, canvas.style.height);
+                ctx.fillRect(0, squareHeight * i, canvas.style.width, 1);
             }
         }
     
@@ -135,12 +133,10 @@
             }
             for (let i = 0; i < snake.length; i++){
                 //if out of bounds
-                if(snake[i].x > boardSquares || snake[i].y > boardSquares || snake[i].x < 0 || snake[i].y < 0){
-                        alive = false;
-                }
+                if(snake[i].x > boardSquares + 1 || snake[i].y > boardSquares + 1 || snake[i].x < 0 || snake[i].y < 0) alive = false;
                 //if collides with other part of snake
                 for (let j = 0; j < snake.length; j++) {
-                    if(i==j) continue;
+                    if(i == j) continue;
                     if(snake[i].x == snake[j].x && snake[i].y == snake[j].y) alive = false;
                 }
             }
@@ -149,12 +145,11 @@
         function dead(){
             ctx.font = "48px serif";
             ctx.fillStyle = "rgb(255 0 0)";
-            ctx.fillText("DEAD, press 'r' to restart", 5, canvas.height/2);
+            ctx.fillText("DEAD, press 'r' to restart", 5, canvas.style.height/2);
         }
     
         //Get user inputs
         document.addEventListener('keydown', function(e){
-            console.log(e);
             //Left arrow key
             if(e.key == "ArrowLeft" && moveDir.x === 0){
                 changedmoveDir = new vec(-1, 0);
