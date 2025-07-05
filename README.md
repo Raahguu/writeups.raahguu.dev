@@ -1,2 +1,3 @@
 # raahguu.github.io
-GitHub Pages repo
+I am completely remodelling from ground up to use Jekyll
+
