@@ -21,7 +21,7 @@
 title: Raahguu's Writeups
 email: raahguu@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-	A site to host my writeups for CTFs that I do. By Raahguu
+    A site to host my writeups for CTFs that I do. By Raahguu
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http:raahguu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raahguu
