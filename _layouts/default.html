@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
-{% seo %}
+	{% seo %}
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h1 id="a-title">{{ page.title | default: site.title }}</h1>
+		<nav class="breadcrumbs">
+			<a href="/">./</a>
+			{%- assign segments = page.url | split: '/' -%}
+			{%- assign path = "" -%}
+			{%- for segment in segments -%}
+				{%- if segment != "" and forloop.last == false -%}
+					{%- assign path = path | append: "/" | append: segment -%}
+					<a href="{{ path }}/">{{ segment }}/</a>
+				{%- endif -%}
+			{%- endfor -%}
+			<a href="{{ path }}">{{ segments.last }}</a>
+		</nav>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        <section id="downloads">
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        <section id="links">
+          <a href="{{ site.github.owner_url }}" class="btn btn-github"><span class="icon"></span></a>
         </section>
       </div>
     </header>
@@ -28,6 +39,9 @@
     <div class="container">
       <section id="main_content">
         {{ content }}
+		{% if page.url != "/" %}
+			<a href="..">Back</a>
+		{% endif %}
       </section>
     </div>
   </body>
