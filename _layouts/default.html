@@ -22,10 +22,10 @@
 			{%- for segment in segments -%}
 				{%- if segment != "" and forloop.last == false -%}
 					{%- assign path = path | append: "/" | append: segment -%}
-					<a href="{{ path }}/">{{ segment }}/</a>
+					<a href="{{ path }}/">{{ segment | url_decode }}/</a>
 				{%- endif -%}
 			{%- endfor -%}
-			<a href="{{ path }}">{{ segments.last }}</a>
+			<a href="{{ page.url }}/">{{ segments.last | url_decode }}</a>
 		</nav>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
