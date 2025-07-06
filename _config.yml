@@ -23,7 +23,7 @@ email: raahguu@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
     A site to host my writeups for CTFs that I do.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://writeups.raahguu.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://writeups.raahguu.dev" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  raahguu
 
 # Build settings
