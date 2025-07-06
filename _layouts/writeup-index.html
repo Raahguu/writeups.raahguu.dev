@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{{ content }} 
+
+{% assign path = page.path | split: '/' | slice: 1, -1 %}
+{% assign path_length = path | size%}
+
+{%- for segment in path -%}
+	{% if forloop.first == false %} <h1> - </h1> {%- endif -%}
+	<h1>{{ segment }}</h1>
+{% endfor %}
+<ul>
+	{% assign child_CTFs = "" %}
+	{% assign child_years = "" %}
+	{% for writeup in site.writeups %}
+		{% assign segments = writeup.path | split: '/' %}
+		{% assign w_year = segments[1] %}
+		{% assign w_ctf = segments[2] %}
+		{% assign w_slug = segments[3] %}
+
+		{% if path_length == 0 %}
+			{% unless child_years contains w_year %}
+				{% assign child_years = child_years | append: w_year | append: "," %}
+				<li><a href="/{{ w_year }}/">{{ w_year }}</a></li>
+			{% endunless %}
+			
+		{% elsif path_length == 1 and w_year == path[0] %}
+			{% unless child_CTFs contains w_ctf %}
+				{% assign child_CTFs = child_CTFs | append: w_ctf | append: "," %}
+				<li><a href="/{{ w_year }}/{{ w_ctf }}/">{{ w_ctf }}</a></li>
+			{% endunless %}
+
+		{% elsif path_length == 2 and w_year == path[0] and w_ctf == path[1] %}
+			<li><a href="/{{ w_year }}/{{ w_ctf }}/{{ w_slug }}/">{{ w_slug }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul>
