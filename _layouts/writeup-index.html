@@ -4,13 +4,23 @@ layout: default
 
 {{ content }} 
 
-{% assign path = page.path | split: '/' | slice: 1, -1 %}
-{% assign path_length = path | size%}
+{% assign path = page.path | split: "/" | shift %}
+{% assign path_length = path | size %}
+{% if path_length > 0 %}
+	{% assign path_length = path_length | minus: 1%}
+	{% assign path = path | slice: 0, path_length %}
+{% endif %}
 
-{%- for segment in path -%}
-	{% if forloop.first == false %} <h1> - </h1> {%- endif -%}
-	<h1>{{ segment }}</h1>
+{% assign header_title = "" %}
+{% for segment in path %}
+	{% if forloop.first == false %}
+		{% assign header_title = header_title | append: " - " %}
+	{% endif %}
+	{% assign header_title = header_title | append: segment %}
 {% endfor %}
+
+<h1>{{ header_title }}</h1>
+
 <ul>
 	{% assign child_CTFs = "" %}
 	{% assign child_years = "" %}
@@ -18,7 +28,11 @@ layout: default
 		{% assign segments = writeup.path | split: '/' %}
 		{% assign w_year = segments[1] %}
 		{% assign w_ctf = segments[2] %}
-		{% assign w_slug = segments[3] %}
+		{% assign w_slug = segments[3] | remove: ".md" %}
+
+		{% if segments[-1] == "index.md" %}
+			{% continue %}
+		{% endif %}
 
 		{% if path_length == 0 %}
 			{% unless child_years contains w_year %}
