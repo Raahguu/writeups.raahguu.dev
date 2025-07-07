@@ -6,5 +6,7 @@ layout: writeup-index
 title: Raahguu's Writeups
 ---
 
+[About](/about/)
+
 ## Writeups
 
