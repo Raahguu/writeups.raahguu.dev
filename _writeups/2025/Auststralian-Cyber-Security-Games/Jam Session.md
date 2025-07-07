@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Jam Session
 tags: Osint
 ---
 

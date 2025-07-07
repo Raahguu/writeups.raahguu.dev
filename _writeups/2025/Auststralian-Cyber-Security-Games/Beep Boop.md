@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Beep Boop
 tags: WebX
 ---
 

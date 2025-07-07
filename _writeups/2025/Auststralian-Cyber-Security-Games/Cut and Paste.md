@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Cut and Paste
 tags: Osint
 ---
 

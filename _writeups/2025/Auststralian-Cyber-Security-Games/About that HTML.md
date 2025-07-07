@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: About That HTML
 tags: WebX
 ---
 

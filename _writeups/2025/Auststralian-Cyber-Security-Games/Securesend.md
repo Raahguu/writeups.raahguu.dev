@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Securesend
 tags: Osint
 ---
 

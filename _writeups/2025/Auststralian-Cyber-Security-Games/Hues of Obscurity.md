@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Hues of Obscurity
 tags: Crypto
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: Buried in the Cipher
 tags: Crypto
 ---
 

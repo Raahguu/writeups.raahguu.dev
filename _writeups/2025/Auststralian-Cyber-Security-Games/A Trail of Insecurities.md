@@ -1,5 +1,6 @@
 ---
 layout: writeup
+title: A Trail of Insecurities
 tags: Osint
 ---
 
