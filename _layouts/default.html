@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+		{% include head-custom.html %}
 
-	{% seo %}
-  </head>
+		{% seo %}
+	</head>
 
-  <body>
-	<div class="site-wrapper">
-    <header>
-      <div class="container">
-        <h1 id="a-title">{{ page.title | default: site.title }}</h1>
-		<nav class="breadcrumbs">
-			<a href="/">~/</a>
-			{%- assign segments = page.url | split: '/' -%}
-			{%- assign path = "" -%}
-			{%- for segment in segments -%}
-				{%- if segment != "" and forloop.last == false -%}
-					{%- assign path = path | append: "/" | append: segment -%}
-					<a href="{{ path }}/">{{ segment | url_decode }}/</a>
-				{%- endif -%}
-			{%- endfor -%}
-			<a href="{{ page.url }}/">{{ segments.last | url_decode }}</a>
-		</nav>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+	<body>
+		<div class="site-wrapper">
+			<header>
+				<div class="container">
+					<h1 id="a-title">{{ page.title | default: site.title }}</h1>
+					<nav id="breadcrumb"></nav>
+					<h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        <section id="links">
-          <a href="{{ site.github.owner_url }}" class="btn btn-github"><span class="icon"></span></a>
-        </section>
-      </div>
-    </header>
+					<section id="links">
+						<a href="{{ site.github.owner_url }}" class="btn btn-github"><span class="icon"></span></a>
+					</section>
+				</div>
+			</header>
 
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-		<br>
-		{% if page.url != "/" %}
-			<a href="..">Back</a>
-		{% endif %}
-		<br><br>
-      </section>
-    </div>
-    </div>
-	<footer>
-		<div class="container">
-			<p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. <a href="{{ site.github.repository_url }}">View on Github</a></p>
+			<div class="container">
+				<section id="main_content">
+					{{ content }}
+					<br>
+					{% if page.url != "/" %}
+						<a href="..">Back</a>
+					{% endif %}
+					<br><br>
+				</section>
+			</div>
 		</div>
-	</footer>
-  </body>
+		<footer>
+			<div class="container">
+				<p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. <a href="{{ site.github.repository_url }}">View on Github</a></p>
+			</div>
+		</footer>
+	</body>
+	<script>
+		function buildBreadcrumb() {	
+			const breadcrumb = document.getElementById('breadcrumb');
+			if (breadcrumb === null) {
+				return;
+			}	
+
+			const segments = window.location.pathname.split('/').filter(Boolean);
+			let path = '/';
+			const crumbs = segments.map((segment, index) => {
+				path += segment + '/';
+				const label = decodeURIComponent(segment.replace(/[-_]/g, ' '));
+				slash = "/";
+				if (index == segments.length - 1) {
+					slash = "";
+				}
+				return `<a href="${path}">${label}${slash}</a>`;
+			});
+			breadcrumbPath =  `<a href="/">~/</a>${crumbs.join('')}`;
+			breadcrumb.innerHTML = breadcrumbPath;
+		}
+
+		buildBreadcrumb();
+	</script>
 </html>

@@ -17,38 +17,40 @@ layout: default
 	{% if forloop.first == false %}
 		{% assign header_title = header_title | append: " - " %}
 	{% endif %}
-	{% assign header_title = header_title | append: segment %}
+	{% assign seg = segment | replace: "-", " " %}
+	{% assign header_title = header_title | append: seg %}
 {% endfor %}
 
 <h1>{{ header_title }}</h1>
 
 <ul>
-	{% assign child_CTFs = "" %}
-	{% assign child_years = "" %}
+	{% assign child_names = "" | split: "" %}
+
 	{% for writeup in site.writeups %}
-		{% assign segments = writeup.path | split: '/' %}
-		{% assign w_year = segments[1] %}
-		{% assign w_ctf = segments[2] %}
-		{% assign w_slug = segments[3] | remove: ".md" %}
+		{% assign segments = writeup.path | split: "/" | shift %}
 
 		{% if segments[-1] == "index.md" %}
 			{% continue %}
 		{% endif %}
 
-		{% if path_length == 0 %}
-			{% unless child_years contains w_year %}
-				{% assign child_years = child_years | append: w_year | append: "," %}
-				<li><a href="/{{ w_year }}/">{{ w_year }}</a></li>
-			{% endunless %}
-			
-		{% elsif path_length == 1 and w_year == path[0] %}
-			{% unless child_CTFs contains w_ctf %}
-				{% assign child_CTFs = child_CTFs | append: w_ctf | append: "," %}
-				<li><a href="/{{ w_year }}/{{ w_ctf }}/">{{ w_ctf }}</a></li>
-			{% endunless %}
+		{% assign is_in_current_path = true %}
+		{% assign iter_max = path_length | minus: 1 %}
+		{% for i in (0..iter_max) %}
+			{% if segments[i] != path[i] %}
+				{% assign is_in_current_path = false %}
+			{% endif %}
+		{% endfor %}
 
-		{% elsif path_length == 2 and w_year == path[0] and w_ctf == path[1] %}
-			<li><a href="/{{ w_year }}/{{ w_ctf }}/{{ w_slug }}/">{{ w_slug }}</a></li>
+		{% if path_length == 0 %}
+			{% assign is_in_current_path = true %}
+		{% endif %}
+
+		{% if is_in_current_path %}
+			{% assign next_level = segments[path_length] %}
+			{% unless child_names contains next_level %}
+				{% assign child_names = child_names | push: next_level %}
+				<li><a href="{{ next_level | split: '.' | first }}/">{{ next_level | remove: ".md" | replace: "-", " " }}</a></li>
+			{% endunless %}
 		{% endif %}
 	{% endfor %}
 </ul>
