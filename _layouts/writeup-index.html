@@ -23,7 +23,7 @@ layout: default
 
 <h1>{{ header_title }}</h1>
 
-<ul>
+<ul id="index">
 	{% assign child_names = "" | split: "" %}
 
 	{% for writeup in site.writeups %}
@@ -49,8 +49,51 @@ layout: default
 			{% assign next_level = segments[path_length] %}
 			{% unless child_names contains next_level %}
 				{% assign child_names = child_names | push: next_level %}
-				<li><a href="{{ next_level | split: '.' | first }}/">{{ next_level | remove: ".md" | replace: "-", " " }}</a></li>
+				{% assign class_name = "" %}			
+				{% assign link_text = next_level | split: '.' | first %}
+				{% if next_level == segments[-1] %}
+					{% assign first_type = writeup.tags | first %}
+					{% assign tags = 'class="writeups" writeupType="' | append: first_type | append: '"' %}
+					{% assign link_text = writeup.title %}
+				{% endif %}
+				<li {{ tags }}><a href="{{ next_level | split: '.' | first }}/">{{ link_text }}</a></li>
 			{% endunless %}
 		{% endif %}
 	{% endfor %}
 </ul>
+
+
+<script>
+	function groupWriteups(){
+		let writeups = document.querySelectorAll(".writeups");
+		if(writeups.length == 0) return;
+		let parentNode = writeups[0].parentNode;
+
+		let groupedWriteups = [];
+		writeups.forEach(writeup => {
+			let isAppended = false;
+			let writeupType = writeup.getAttribute("writeupType");
+			for(let i = 0; i < groupedWriteups.length; i++){
+				if(groupedWriteups[i][0] == writeupType){
+					groupedWriteups[i].push(writeup);
+					isAppended = true;
+					break;
+				}
+			};
+			if(!isAppended){
+				groupedWriteups.push([writeupType, writeup]);
+			}
+		});
+
+		parentNode.innerHTML = "";
+		groupedWriteups.forEach(group => {
+			parentNode.innerHTML += `<h2>${group[0]}</h2>\n`;
+			for(let i = 1; i < group.length; i++){
+				parentNode.innerHTML += group[i].outerHTML;
+			}
+			parentNode.innerHTML += "<br>";
+		});
+	}
+
+	groupWriteups();
+</script>
