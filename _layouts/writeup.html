@@ -10,9 +10,15 @@ layout: default
 <h2>{{ year }} - {{ ctf }}</h2>
 <h2>{{ page.title }}</h2>
 
-<p class="view">by {{ page.author | default: site.author }}</p>
+<p>
+<span class="view" id="Author">By {{ page.author | default: site.author }}</span>
+{%- assign word_count = page.content | split: " " | size -%}
+{%- assign WPM = 130 -%}
+{%- assign read_time = word_count | divided_by: WPM | round -%}
+<span class="view" id="readTime">{{ read_time }} min read</span>
+</p>
 
-{{content}}
+{{ content }}
 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
