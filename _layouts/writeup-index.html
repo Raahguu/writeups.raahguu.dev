@@ -56,7 +56,7 @@ layout: default
 					{% assign tags = 'class="writeups" writeupType="' | append: first_type | append: '"' %}
 					{% assign link_text = writeup.title %}
 				{% endif %}
-				<li {{ tags }}><a href="{{ next_level | split: '.' | first }}/">{{ link_text }}</a></li>
+				<li {{ tags }}><a href="{{ next_level | split: '.' | first }}">{{ link_text }}</a></li>
 			{% endunless %}
 		{% endif %}
 	{% endfor %}

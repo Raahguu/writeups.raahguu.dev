@@ -29,7 +29,11 @@
 					{{ content }}
 					<br>
 					{% if page.url != "/" %}
-						<a href="..">Back</a>
+						{% assign back_href = ".." %}
+						{% if page.url | slice: -1 != "/" %}
+							{% assign back_href = "/" %}
+						{% endif %}
+						<a href="{{back_href}}">Back</a>
 					{% endif %}
 					<br><br>
 				</section>
