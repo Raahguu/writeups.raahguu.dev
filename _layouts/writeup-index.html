@@ -55,6 +55,8 @@ layout: default
 					{% assign first_type = writeup.tags | first %}
 					{% assign tags = 'class="writeups" writeupType="' | append: first_type | append: '"' %}
 					{% assign link_text = writeup.title %}
+				{% else %}
+					{% assign tags = 'class="subgroup" writeupType="Subgroup"' %}
 				{% endif %}
 				<li {{ tags }}><a href="{{ next_level | split: '.' | first }}">{{ link_text }}</a></li>
 			{% endunless %}
@@ -85,6 +87,7 @@ layout: default
 			}
 		});
 
+		if(groupedWriteups.length == 1 && groupedWriteups[0][0] == "Subgroup"){ return; }
 		parentNode.innerHTML = "";
 		groupedWriteups.forEach(group => {
 			parentNode.innerHTML += `<h2>${group[0]}</h2>\n`;
