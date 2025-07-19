@@ -45,7 +45,7 @@ Low and behold, when `{{ 7 * 7 }}` is input into the form, the reply is `49`. Th
 
 The next step after determining that SSTI can be done, is figuring out what templating language the server uses, this is done by inputting commands that would have different outputs in different languages. Luckily, some else has already created a simple way to test what language the server might be using. Thank you [James Kettle at PortSwigger](https://portswigger.net/research/server-side-template-injection), where in the article he shows a very useful image:
 
-![A Tree structure that shows the branching paths for what language a server with templating could use](/assets/images/writeups_images/SSTI1_SSTI_Template.png)
+![A Tree structure that shows the branching paths for what language a server with templating could use](/assets/images/writeups_images/SSTI1/SSTI_Template.png)
 
 As you can see, we seem to have missed a step, that becuase I would have gone `{{7*7}}`, and then `${7*7}`, but I guess to make the diagram have a nice end point, they have those two the other way round. Anyway, as we have already proven that `{{7*7}}` is executed, that means that we're no onto the `{{7*'7'}}` step, which as you can see would then mean that the template langauge is either `Jinja2` or `Twig`.
 

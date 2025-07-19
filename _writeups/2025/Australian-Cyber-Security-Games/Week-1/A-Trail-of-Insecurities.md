@@ -28,7 +28,7 @@ The Centrist Union says they’re about balance, but there’s something off. No
 ```
 
 What really stood out about this post though was the attatched image
-![Image of 6 coworkers at a table independently working on things](/assets/images/writeups_images/ATrailOfInsecuritiesKenGoodmanPostPhoto.jpeg)
+![Image of 6 coworkers at a table independently working on things](/assets/images/writeups_images/A-Trail-of-Insecurities/KenGoodmanPostPhoto.jpeg)
 
 On the far away monitor in the photo is the first part of the flag `cysea{s3cur3`. 
 
