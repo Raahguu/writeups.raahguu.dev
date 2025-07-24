@@ -3,11 +3,10 @@ layout: default
 ---
 
 {% assign segments = page.path | split: '/' %}
-{% assign year = segments[1] %}
-{% assign ctf = segments[2] %}
+{% assign segments_length = segments.size | minus: 2 %}
+{% assign segments = segments | slice: 1, segments_length %}
 
-
-<h2>{{ year }} - {{ ctf }}</h2>
+<h3>{% for seg in segments reversed %}{{seg | replace: '\-', 'PLACEHOLDERDASH' | replace: '-', ' ' | replace: 'PLACEHOLDERDASH', '-'}}{% unless forloop.last %} - {% endunless %}{% endfor %}</h3>
 <h2>{{ page.title }}</h2>
 
 <p>

@@ -19,7 +19,7 @@
 					<h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
 					<section id="links">
-						<a href="{{ site.github.owner_url }}" class="btn btn-github"><span class="icon"></span></a>
+						<a href="{{ site.github.owner_url }}" class="btn btn-github" alt="Link to {{ site.author }}'s Github account" rel="nofollow"><span class="icon" alt="Github Logo"></span></a>
 					</section>
 				</div>
 			</header>
@@ -34,7 +34,7 @@
 						{% if last_char != "/" %}
 							{% assign back_href = "." %}
 						{% endif %}
-						<a href="{{back_href}}">Back</a>
+						<a href="{{back_href}}" title="Goes back up through the filestream">Back</a>
 					{% endif %}
 					<br><br>
 				</section>
@@ -42,7 +42,7 @@
 		</div>
 		<footer>
 			<div class="container">
-				<p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. <a href="{{ site.github.repository_url }}">View on Github</a></p>
+				<p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. <a href="{{ site.github.repository_url }}" title="This website's Github Repository" rel="nofollow">View on Github</a></p>
 			</div>
 		</footer>
 	</body>
