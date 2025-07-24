@@ -50,13 +50,13 @@ layout: default
 			{% unless child_names contains next_level %}
 				{% assign child_names = child_names | push: next_level %}
 				{% assign class_name = "" %}			
-				{% assign link_text = next_level | split: '.' | first %}
 				{% if next_level == segments[-1] %}
 					{% assign first_type = writeup.tags | first %}
 					{% assign tags = 'class="writeups" writeupType="' | append: first_type | append: '"' %}
 					{% assign link_text = writeup.title %}
 				{% else %}
 					{% assign tags = 'class="subgroup" writeupType="Subgroup"' %}
+					{% assign link_text = next_level | replace: '\-', 'PLACEHOLDERDASH' | replace: '-', ' ' | replace: 'PLACEHOLDERDASH', '-'%}
 				{% endif %}
 				<li {{ tags }}><a href="{{ next_level | split: '.' | first }}">{{ link_text }}</a></li>
 			{% endunless %}
