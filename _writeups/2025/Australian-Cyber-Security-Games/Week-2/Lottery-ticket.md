@@ -6,7 +6,7 @@ tags: Net
 
 ## Warning
 
-This challenge is a continuation of [A telling tale](../A-telling-tale/), so I suggest you read that first to get an idea of what is going on
+This challenge is a continuation of [A telling tale](../A-telling-tale), so I suggest you read that first to get an idea of what is going on
 
 ## Description
 

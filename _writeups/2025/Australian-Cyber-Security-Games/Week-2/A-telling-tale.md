@@ -154,4 +154,4 @@ PORT   STATE SERVICE  VERSION
 
 This identifies which ports are open, and becuase the protocol `port 17`uses wasn't recoginsed, also showed what return the command got. Now port 17 just happens to return the flag, so the challenge was over `cysea{y0uv3_n3773d_a_f0r7un3_c0n6ratul4tion5}`
 
-But there was a separate continuation challenge called [Lottery ticket](../Lottery-ticket/). I suggest reading that if you want to see some slightly more complex net stuff.
+But there was a separate continuation challenge called [Lottery ticket](../Lottery-ticket). I suggest reading that if you want to see some slightly more complex net stuff.
