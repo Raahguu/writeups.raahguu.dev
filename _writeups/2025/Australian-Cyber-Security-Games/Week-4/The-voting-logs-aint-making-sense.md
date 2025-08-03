@@ -1,5 +1,5 @@
 ---
-layout: writeups
+layout: writeup
 title: The voting logs ain't making sense
 tags: WebX
 ---

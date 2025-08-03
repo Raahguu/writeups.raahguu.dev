@@ -29,37 +29,37 @@ Completed NSE at 19:28, 0.00s elapsed
 Initiating NSE at 19:28
 Completed NSE at 19:28, 0.00s elapsed
 Initiating Ping Scan at 19:28
-Scanning office.centrist.freedonia.vote (54.153.192.232) [4 ports]
+Scanning office.centrist.freedonia.vote (re.da.ct.ed) [4 ports]
 Completed Ping Scan at 19:28, 0.06s elapsed (1 total hosts)
 Initiating Parallel DNS resolution of 1 host. at 19:28
 Completed Parallel DNS resolution of 1 host. at 19:28, 0.06s elapsed
 Initiating SYN Stealth Scan at 19:28
-Scanning office.centrist.freedonia.vote (54.153.192.232) [1000 ports]
-Discovered open port 7/tcp on 54.153.192.232
-Discovered open port 9/tcp on 54.153.192.232
-Discovered open port 19/tcp on 54.153.192.232
-Discovered open port 17/tcp on 54.153.192.232
+Scanning office.centrist.freedonia.vote (re.da.ct.ed) [1000 ports]
+Discovered open port 7/tcp on re.da.ct.ed
+Discovered open port 9/tcp on re.da.ct.ed
+Discovered open port 19/tcp on re.da.ct.ed
+Discovered open port 17/tcp on re.da.ct.ed
 Completed SYN Stealth Scan at 19:28, 5.11s elapsed (1000 total ports)
 Initiating Service scan at 19:28
-Scanning 4 services on office.centrist.freedonia.vote (54.153.192.232)
+Scanning 4 services on office.centrist.freedonia.vote (re.da.ct.ed)
 Service scan Timing: About 75.00% done; ETC: 19:32 (0:00:53 remaining)
 Completed Service scan at 19:31, 158.56s elapsed (4 services on 1 host)
-Initiating OS detection (try #1) against office.centrist.freedonia.vote (54.153.192.232)
-Retrying OS detection (try #2) against office.centrist.freedonia.vote (54.153.192.232)
+Initiating OS detection (try #1) against office.centrist.freedonia.vote (re.da.ct.ed)
+Retrying OS detection (try #2) against office.centrist.freedonia.vote (re.da.ct.ed)
 Initiating Traceroute at 19:31
 Completed Traceroute at 19:31, 0.02s elapsed
 Initiating Parallel DNS resolution of 1 host. at 19:31
 Completed Parallel DNS resolution of 1 host. at 19:31, 0.05s elapsed
-NSE: Script scanning 54.153.192.232.
+NSE: Script scanning re.da.ct.ed.
 Initiating NSE at 19:31
 Completed NSE at 19:31, 14.55s elapsed
 Initiating NSE at 19:31
 Completed NSE at 19:31, 1.21s elapsed
 Initiating NSE at 19:31
 Completed NSE at 19:31, 0.00s elapsed
-Nmap scan report for office.centrist.freedonia.vote (54.153.192.232)
+Nmap scan report for office.centrist.freedonia.vote (re.da.ct.ed)
 Host is up (0.0097s latency).
-rDNS record for 54.153.192.232: ec2-54-153-192-232.ap-southeast-2.compute.amazonaws.com
+rDNS record for re.da.ct.ed: ec2-re.da.ct.ed.ap-southeast-2.compute.amazonaws.com
 Not shown: 996 filtered tcp ports (no-response)
 PORT   STATE SERVICE  VERSION
 7/tcp  open  echo
@@ -120,7 +120,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 TRACEROUTE (using port 80/tcp)
 HOP RTT     ADDRESS
 1   0.63 ms 10.0.2.2
-2   0.84 ms ec2-54-153-192-232.ap-southeast-2.compute.amazonaws.com (54.153.192.232)
+2   0.84 ms ec2-re.da.ct.ed.ap-southeast-2.compute.amazonaws.com (re.da.ct.ed)
 
 NSE: Script Post-scanning.
 Initiating NSE at 19:31

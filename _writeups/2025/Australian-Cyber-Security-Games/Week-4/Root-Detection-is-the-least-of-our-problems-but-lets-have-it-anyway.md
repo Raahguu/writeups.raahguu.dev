@@ -1,5 +1,5 @@
 ---
-layout: writeups
+layout: writeup
 title: Root Detection is the least of our problems but let's have it anyway
 tags: Mobile Rev Android
 ---

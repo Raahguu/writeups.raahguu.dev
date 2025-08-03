@@ -1,5 +1,5 @@
 ---
-layout: writeups
+layout: writeup
 title: I can be anyone!
 tags: WebX
 ---

