@@ -6,7 +6,9 @@ tags: Pwn
 
 ## Description
 
-Can you try to get the flag? Beware we have PIE! Connect to the program with netcat:
+Can you try to get the flag? Beware we have PIE! 
+<!--more-->
+Connect to the program with netcat:
 $ nc rescued-floay.picoctf.net 60696
 The program's source code can be downloaded here. The binary can be downloaded here. 
 

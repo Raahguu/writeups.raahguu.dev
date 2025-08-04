@@ -8,6 +8,8 @@ tags: Crypto
 
 An unusual signal has been intercepted — its contents painted in mystery. Decrypt what the eye cannot see.
 
+<!--more-->
+
 Attatched Image
 ![Hexahue Cipher image](/assets/images/writeups_images/Hues-of-Obscurity/HexaHues.png)
 

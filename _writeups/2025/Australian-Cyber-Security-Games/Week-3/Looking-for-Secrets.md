@@ -9,6 +9,9 @@ tags: WebX
 We're here to spread great information about our candidates yet someone manages to get access to our configuration page every time. How are they doing this?!
 
 It makes no sense, we've checked for everything that can be bad... right? Find out how, tell me and I'll reward you with a secret.
+
+<!--more-->
+
 http://redac.ted:8080/ 
 
 

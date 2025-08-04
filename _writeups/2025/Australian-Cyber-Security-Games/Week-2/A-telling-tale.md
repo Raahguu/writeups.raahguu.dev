@@ -13,6 +13,8 @@ The staffer gave this business card to the pary leader, Alyssa Chen, who decided
 Can you find what the fortune teller had to say to Alyssa via this service?
 office.centrist.freedonia.vote
 
+<!--more-->
+
 ## Solution
 
 First off, I `nmap`ed the domain, that got:

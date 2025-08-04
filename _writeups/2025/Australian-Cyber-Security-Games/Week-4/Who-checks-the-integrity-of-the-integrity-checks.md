@@ -8,6 +8,8 @@ tags: WebX
 
 The government has ordered verification of the votes via the printed receipts. The results were... a mismatch in votes! While there were probably multiple ways that this came as a result, is it possible for someone to tamper with the receipts?
 
+<!--more-->
+
 As the backend code for all of week 4 was the same, we also had the backend code of the printer
 
 

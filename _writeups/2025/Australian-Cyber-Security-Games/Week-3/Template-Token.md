@@ -12,6 +12,8 @@ Cast your vote, inspect the results… but is that all there is?
 
 Your mission? Break into the admin panel and uncover the flag.
 
+<!--more-->
+
 http://redac.ted:5000/
 
 This challenge also provided the `app.py` file

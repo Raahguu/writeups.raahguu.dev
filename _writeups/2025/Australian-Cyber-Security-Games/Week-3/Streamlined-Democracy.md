@@ -8,6 +8,7 @@ tags: WebX
 
 Before you begin your voting, review our online guide and reach out if you have any questions. Your input is very important to us!
 
+<!--more-->
 
 We were then given a link
 

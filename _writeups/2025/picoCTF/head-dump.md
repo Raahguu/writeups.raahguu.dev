@@ -8,6 +8,8 @@ tags: WebX
 
 Welcome to the challenge! In this challenge, you will explore a web application and find an endpoint that exposes a file containing a hidden flag. The application is a simple blog website where you can read articles about various topics, including an article about API Documentation. Your goal is to explore the application and find the endpoint that generates files holding the server’s memory, where a secret flag is hidden. The website is running picoCTF News.
 
+<!--more-->
+
 ## Solution
 
 This is a very quick challenge going to the website shows a bunch of cards which each appear to contain a post from `picoCTF News`. Of these the only one mentioned in the description was the `API Documentation` one. Clicking everything on it does nothing, except for clicking `#API Documentation`, which takes you to a site documenting all the endpoints of the api.

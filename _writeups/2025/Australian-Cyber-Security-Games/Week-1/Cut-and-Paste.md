@@ -8,6 +8,8 @@ tags: Osint
 
 A confidential memo from Governor Henrik Stahl of the National Renewal Party has surfaced just before the election. It appears routine but investigators believe crucial data is hidden within. The memo references an earlier operation involving a mid-April strategy drop, which may still be accessible. Your task, if you choose to accept it is to uncover and reconstruct the full flag, hidden across multiple layers of this document and one external source.
 
+<!--more-->
+
 The challenge then gives you the pdf file [memo.pdf](/assets/files/cutAndPasteMemo.pdf)
 
 ## Solution

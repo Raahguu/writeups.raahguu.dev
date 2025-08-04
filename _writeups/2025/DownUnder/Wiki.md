@@ -2,6 +2,7 @@
 layout: writeup
 title: Wiki
 tags: Misc
+excerpt: "Use the Wiki to find the flag..."
 ---
 
 ## Warning

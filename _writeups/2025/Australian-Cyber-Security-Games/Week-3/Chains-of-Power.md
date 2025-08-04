@@ -12,6 +12,8 @@ Unfortunately, one careless candidate has leaked their private key. Can you expl
 
 Access the election results. Uncover the truth.
 
+<!--more-->
+
 http://redac.ted:8888/
 
 

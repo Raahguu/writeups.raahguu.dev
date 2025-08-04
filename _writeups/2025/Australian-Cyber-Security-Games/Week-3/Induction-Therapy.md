@@ -8,6 +8,8 @@ tags: WebX
 
 The citizens of Freedonia are preparing for an upcoming national vote - but before they can make their voices heard, they’ll need to get informed. This challenge drops participants into a voter education web portal where all candidates, policies, and debates are presented for review. Only time will tell who'll you vote for soon...
 
+<!--more-->
+
 http://redac.ted:9001/
 
 We were also then given the source code

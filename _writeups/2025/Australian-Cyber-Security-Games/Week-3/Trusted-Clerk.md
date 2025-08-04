@@ -10,6 +10,8 @@ The national elections in Freedonia have officially begun. In the spirit of tran
 
 “Your voice matters twice - once for your candidate, and once for your country.”
 
+<!--more-->
+
 http://redac.ted:9002/
 
 

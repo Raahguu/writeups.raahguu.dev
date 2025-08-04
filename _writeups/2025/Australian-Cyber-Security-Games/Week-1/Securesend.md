@@ -8,6 +8,8 @@ tags: Osint
 
 Some phishing emails have been going out from the People's Solidarity front. Can you figure out why their domain isn't being protected?
 
+<!--more-->
+
 ## Solution
 
 The description was everything you got for that challenge, so I first off had to find out what domain the `People's Solidairy front` used. Luckily, I had already done the web challenges, and all of them used different subdomains of `freedonia.vote`, so I guessed that their domain would be `solidarity.freedonia.vote`, and what would you know, I was right

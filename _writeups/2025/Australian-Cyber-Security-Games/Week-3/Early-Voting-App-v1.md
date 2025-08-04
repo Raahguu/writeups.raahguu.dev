@@ -12,6 +12,8 @@ Ok fine, maybe its more in the alpha stage, but we're quite excited about this o
 
 We've implemented some logic for when a candidate wins by getting all the votes, but... that shouldn't be possible with only one user anyways.
 
+<!--more-->
+
 `http:/redac.ted/`
 
 

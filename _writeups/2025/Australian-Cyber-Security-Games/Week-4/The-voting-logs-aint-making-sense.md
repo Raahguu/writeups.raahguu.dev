@@ -8,6 +8,8 @@ tags: WebX
 
 A paranormal event was observed during the voting. Apparently multiple successful vote submissions were starting to be observed in the logs for an individual and votes for citizens that don't exist? Can you find out how an attacker may have done this and submit a vote for the citizen ID CIT1337 who has already voted?
 
+<!--more-->
+
 The code for the backend of all week 4 challenges was the same, so we also had that.
 
 

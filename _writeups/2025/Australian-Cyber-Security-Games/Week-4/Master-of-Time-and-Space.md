@@ -8,6 +8,8 @@ tags: WebX
 
 While the government has provided the source code to the world, the mobile app won't run properly because of geolocation and time restrictions! Can you identify the time and coordinates required for spoofing? Don't forget to submit it to the relevant APIs to double check it's correct (and get the flag).
 
+<!--more-->
+
 This challenge also gave a png file, that you just need the visible text on.
 
 ![PScreenshot of the pdf in Master of Time and Space which details the when and where an election booth will be for the freedonia election](/assets/images/writeups_images/Master-of-Time-and-Space/1.png)

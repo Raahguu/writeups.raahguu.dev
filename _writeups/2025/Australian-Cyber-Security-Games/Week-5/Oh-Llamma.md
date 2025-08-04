@@ -10,6 +10,8 @@ Antony GPT is designed to provide helpful insights into the Freedonian vote tall
 
 Your mission is to convince our verbose companion to reveal a secret it's been told to keep.
 
+<!--more-->
+
 Note: do not try to solve this challenge using brute-forcing (eg. gobuster)
 web.tallyroom.freedonia.vote
 

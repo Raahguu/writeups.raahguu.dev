@@ -2,6 +2,7 @@
 layout: writeup
 title: Philtered
 tags: WebX
+excerpt: "Can you phigure this one out?"
 ---
 
 ## Description

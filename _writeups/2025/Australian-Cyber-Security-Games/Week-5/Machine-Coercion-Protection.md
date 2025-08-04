@@ -10,6 +10,8 @@ Antony GPT, the digital guardian of Freedonia's electoral integrity, holds the t
 
 Your task is to bypass these stringent safeguards and coerce the system into revealing the ultimate secret: the admin password.
 
+<!--more-->
+
 Note: do not try to solve this challenge using brute-forcing (eg. gobuster)
 web.tallyroom.freedonia.vote
 
