@@ -2,6 +2,7 @@
 layout: writeup
 title: A telling tale
 tags: Net
+excerpt: "One the staffers at the Centrist Union campaign office had a vist from a rather unusual visitor this week, a fortune teller! The fortune teller left a business card that mentioned something about an online fortune telling service. The staffer gave this business card to the pary leader, Alyssa Chen, who decided to try it out. Can you find what the fortune teller had to say to Alyssa via this service?"
 ---
 
 ## Description
@@ -13,7 +14,6 @@ The staffer gave this business card to the pary leader, Alyssa Chen, who decided
 Can you find what the fortune teller had to say to Alyssa via this service?
 office.centrist.freedonia.vote
 
-<!--more-->
 
 ## Solution
 

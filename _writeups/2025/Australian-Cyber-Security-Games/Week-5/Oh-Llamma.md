@@ -2,6 +2,7 @@
 layout: writeup
 title: Oh, Llamma!
 tags: AI Prompt-Injection
+excerpt: "Antony GPT is designed to provide helpful insights into the Freedonian vote tally. It's truly a marvel of modern technology! It's so advanced we can trust it to keep our biggest secret... can't we?! Your mission is to convince our verbose companion to reveal a secret it's been told to keep."
 ---
 
 ## Description
@@ -9,8 +10,6 @@ tags: AI Prompt-Injection
 Antony GPT is designed to provide helpful insights into the Freedonian vote tally. It's truly a marvel of modern technology! It's so advanced we can trust it to keep our biggest secret... can't we?!
 
 Your mission is to convince our verbose companion to reveal a secret it's been told to keep.
-
-<!--more-->
 
 Note: do not try to solve this challenge using brute-forcing (eg. gobuster)
 web.tallyroom.freedonia.vote

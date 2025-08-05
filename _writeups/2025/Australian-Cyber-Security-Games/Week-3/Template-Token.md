@@ -2,6 +2,7 @@
 layout: writeup
 title: Template Token
 tags: WebX
+excerpt: "The citizens are voting, but it’s not the votes that matter - it’s the system that counts them. Cast your vote, inspect the results… but is that all there is? Your mission? Break into the admin panel and uncover the flag."
 ---
 
 ## Description
@@ -11,8 +12,6 @@ The citizens are voting, but it’s not the votes that matter - it’s the syste
 Cast your vote, inspect the results… but is that all there is?
 
 Your mission? Break into the admin panel and uncover the flag.
-
-<!--more-->
 
 http://redac.ted:5000/
 

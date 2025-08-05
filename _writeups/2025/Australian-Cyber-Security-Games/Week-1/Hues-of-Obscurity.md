@@ -2,13 +2,13 @@
 layout: writeup
 title: Hues of Obscurity
 tags: Crypto
+excerpt: "An unusual signal has been intercepted — its contents painted in mystery. Decrypt what the eye cannot see."
 ---
 
 ## Description
 
 An unusual signal has been intercepted — its contents painted in mystery. Decrypt what the eye cannot see.
 
-<!--more-->
 
 Attatched Image
 ![Hexahue Cipher image](/assets/images/writeups_images/Hues-of-Obscurity/HexaHues.png)

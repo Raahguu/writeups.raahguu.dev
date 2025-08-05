@@ -2,6 +2,7 @@
 layout: writeup
 title: Chains of Power
 tags: Blockchain
+excerpt: "The early voting systems are now live, and each candidate has been given access to a blockchain-based system that streams real-time results - but only to their own private dashboards. Unfortunately, one careless candidate has leaked their private key. Can you exploit this mistake to impersonate them and retrieve the current vote tally? Access the election results. Uncover the truth."
 ---
 
 ## Description
@@ -12,7 +13,6 @@ Unfortunately, one careless candidate has leaked their private key. Can you expl
 
 Access the election results. Uncover the truth.
 
-<!--more-->
 
 http://redac.ted:8888/
 

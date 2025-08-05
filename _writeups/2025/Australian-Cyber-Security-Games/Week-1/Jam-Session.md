@@ -2,13 +2,13 @@
 layout: writeup
 title: Jam Session
 tags: Osint
+excerpt: "I love a good public playlist. It's the perfect way to get the union working together effectively. Wanna take a listen?"
 ---
 
 ## Description
 
 I love a good public playlist. It's the perfect way to get the union working together effectively. Wanna take a listen?
 
-<!--more-->
 
 https://open.spotify.com/user/31qjibwognhzydlhnkt4ths2aaze
 

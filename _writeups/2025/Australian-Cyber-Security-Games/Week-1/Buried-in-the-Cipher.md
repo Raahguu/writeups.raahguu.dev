@@ -2,13 +2,13 @@
 layout: writeup
 title: Buried in the Cipher
 tags: Crypto
+excerpt: "The message lies deep beneath the surface — obscured by twisted letters, layered encryption, and ancient languages of the deep. First, it was scrambled with a twist on a classic rotation. Then, a tough key led it astray, a repeating current twisted the letters. And finally, it dove into the language of the deep - where only the most echolocative minds can decode it. But nothing stays buried forever. To retrieve the truth, you must trace its path in reverse - from the echoes back to the source."
 ---
 
 ## Description
 
 The message lies deep beneath the surface — obscured by twisted letters, layered encryption, and ancient languages of the deep. First, it was scrambled with a twist on a classic rotation. Then, a tough key led it astray, a repeating current twisted the letters. And finally, it dove into the language of the deep - where only the most echolocative minds can decode it. But nothing stays buried forever. To retrieve the truth, you must trace its path in reverse - from the echoes back to the source.
 
-<!--more-->
 
 It also gives the following text document:
 ```text

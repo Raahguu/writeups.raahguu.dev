@@ -2,13 +2,13 @@
 layout: writeup
 title: SSTI1
 tags: WebX
+excerpt: "I made a cool website where you can announce whatever you want! Try it out! I heard templating is a cool and modular way to build web apps! Check out my website here!"
 ---
 
 ## Description
 
 I made a cool website where you can announce whatever you want! Try it out! I heard templating is a cool and modular way to build web apps! Check out my website here!
 
-<!--more-->
 
 The challenge is then a website, where there is a text box that you can type into, anything that you submit in the form with the text box is then shown on a new page.
 

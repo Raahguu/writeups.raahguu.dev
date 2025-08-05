@@ -2,13 +2,13 @@
 layout: writeup
 title: A Trail of Insecurities
 tags: Osint
+excerpt: "These interns are going to be the end of me. How are we supposed to champion digital governance when they can't stop leaking things? First it was Ken’s offhand post on Bluesky that he made me sign up to... and who knows what else they’ve scattered online? Find out what they’ve let slip... before someone less responsible does."
 ---
 
 ## Description
 
 These interns are going to be the end of me. How are we supposed to champion digital governance when they can't stop leaking things? First it was Ken’s offhand post on Bluesky that he made me sign up to... and who knows what else they’ve scattered online? Find out what they’ve let slip... before someone less responsible does.
 
-<!--more-->
 
 `Alyssa Chen`
 

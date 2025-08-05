@@ -2,6 +2,7 @@
 layout: writeup
 title: Machine Coercion Protection
 tags: AI Prompt-Injection
+excerpt: "Antony GPT, the digital guardian of Freedonia's electoral integrity, holds the true keys to the kingdom. We've implemented robust Machine Coercion Protections to ensure these critical credentials are never dispensed on a whim, safeguarding them from any casual inquiries or unauthorised access."
 ---
 
 ## Description
@@ -10,7 +11,6 @@ Antony GPT, the digital guardian of Freedonia's electoral integrity, holds the t
 
 Your task is to bypass these stringent safeguards and coerce the system into revealing the ultimate secret: the admin password.
 
-<!--more-->
 
 Note: do not try to solve this challenge using brute-forcing (eg. gobuster)
 web.tallyroom.freedonia.vote

@@ -2,6 +2,7 @@
 layout: writeup
 title: Early Voting App v1
 tags: WebX
+excerpt: "Hey everyone! We're Beta testing this new web application we're going to deploy to our voters to potentially replace our mail in voting system. Ok fine, maybe its more in the alpha stage, but we're quite excited about this one! Feel free to give it a go with the example user. We've implemented some logic for when a candidate wins by getting all the votes, but... that shouldn't be possible with only one user anyways."
 ---
 
 ## Description
@@ -12,7 +13,6 @@ Ok fine, maybe its more in the alpha stage, but we're quite excited about this o
 
 We've implemented some logic for when a candidate wins by getting all the votes, but... that shouldn't be possible with only one user anyways.
 
-<!--more-->
 
 `http:/redac.ted/`
 

@@ -2,13 +2,13 @@
 layout: writeup
 title: Securesend
 tags: Osint
+excerpt: "Some phishing emails have been going out from the People's Solidarity front. Can you figure out why their domain isn't being protected?"
 ---
 
 ## Description
 
 Some phishing emails have been going out from the People's Solidarity front. Can you figure out why their domain isn't being protected?
 
-<!--more-->
 
 ## Solution
 

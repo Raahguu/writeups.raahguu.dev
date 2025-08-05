@@ -2,6 +2,7 @@
 layout: writeup
 title: Verification or Execution
 tags: WebX
+excerpt: "Look, this is supposed to be a simple checker for an ID to make sure its actually part of the early voting system, yet someone gained access to my system?! There's only one field and I'm sure my regex is perfect!"
 ---
 
 ## Description
@@ -9,7 +10,6 @@ tags: WebX
 Look, this is supposed to be a simple checker for an ID to make sure its actually part of the early voting system, yet someone gained access to my system?!
 There's only one field and I'm sure my regex is perfect!
 
-<!--more-->
 
 http://redac.ted:8002/
 

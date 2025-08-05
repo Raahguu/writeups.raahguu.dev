@@ -2,15 +2,16 @@
 layout: writeup
 title: PIE TIME
 tags: Pwn
+excerpt: "Can you try to get the flag? Beware we have PIE!"
 ---
 
 ## Description
 
 Can you try to get the flag? Beware we have PIE! 
-<!--more-->
+
 Connect to the program with netcat:
 $ nc rescued-floay.picoctf.net 60696
-The program's source code can be downloaded here. The binary can be downloaded here. 
+
 
 Here is the source code:
 ```c

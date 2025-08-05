@@ -2,13 +2,12 @@
 layout: writeup
 title: Dark Detour
 tags: WebX
+excerpt: "Everyone wants to be in the room where it happens! You can always wait for the invite, or just go in blind!"
 ---
 
 ## Description
 
 Everyone wants to be in the room where it happens! You can always wait for the invite, or just go in blind!
-
-<!--more-->
 
 http://redac.ted:3000/
 

@@ -2,6 +2,7 @@
 layout: writeup
 title: Trusted Clerk
 tags: WebX
+excerpt: 'The national elections in Freedonia have officially begun. In the spirit of transparency and continuous improvement, the Ministry of Electoral Integrity has launched a new early voting portal. Citizens are encouraged not only to cast their vote - but also to leave anonymous feedback about their voting experience. “Your voice matters twice - once for your candidate, and once for your country.”'
 ---
 
 ## Description
@@ -10,7 +11,6 @@ The national elections in Freedonia have officially begun. In the spirit of tran
 
 “Your voice matters twice - once for your candidate, and once for your country.”
 
-<!--more-->
 
 http://redac.ted:9002/
 

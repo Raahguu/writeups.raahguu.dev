@@ -2,13 +2,13 @@
 layout: writeup
 title: Induction Therapy
 tags: WebX
+excerpt: "The citizens of Freedonia are preparing for an upcoming national vote - but before they can make their voices heard, they’ll need to get informed. This challenge drops participants into a voter education web portal where all candidates, policies, and debates are presented for review. Only time will tell who'll you vote for soon..."
 ---
 
 ## Description
 
 The citizens of Freedonia are preparing for an upcoming national vote - but before they can make their voices heard, they’ll need to get informed. This challenge drops participants into a voter education web portal where all candidates, policies, and debates are presented for review. Only time will tell who'll you vote for soon...
 
-<!--more-->
 
 http://redac.ted:9001/
 
