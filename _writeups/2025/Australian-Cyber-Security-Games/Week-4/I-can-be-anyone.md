@@ -2,7 +2,7 @@
 layout: writeup
 title: I can be anyone!
 tags: WebX
-excerpt: "Among the various issues that occured during the voting process, generating a vote code wasn't possible as the system would say 'Citizen <> has already voted'. It seems like someone is taking everyone elses votes! Can you find out how an attacker may have done this and submit a vote for the citizen ID CIT100 who hasn't voted yet?'
+excerpt: "Among the various issues that occured during the voting process, generating a vote code wasn't possible as the system would say 'Citizen <> has already voted'. It seems like someone is taking everyone elses votes! Can you find out how an attacker may have done this and submit a vote for the citizen ID CIT100 who hasn't voted yet?'"
 ---
 
 ## Description
