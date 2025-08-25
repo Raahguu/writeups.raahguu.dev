@@ -1,5 +1,12 @@
+---
+layout: writeup
+title: Xanarto
+tags: Rev Osint
+---
+
 ## Description
 
+I found this guy on LinkedIn who claimed to have created an uncrackable algorithm. Prove him wrong. I have attached the post in an image.
 
 
 ## Writeup
