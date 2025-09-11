@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: 2024 Challenge Coin
+title: Pass Session Link
 permalink: /ecu/tylersPassLink
 ---
 
