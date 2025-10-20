@@ -1,7 +1,15 @@
 ---
 layout: default 
-title: 2024 Challenge Coin
-permalink: /secret/pecanplus/challengeCoin2024
+title: Pass Session Link
+permalink: /ecu/tylersPassLink
 ---
 
-# No.
+<div style="text-align:center; padding-top:50px;">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+    title="Rick Astley - Never Gonna Give You Up"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+</div>
