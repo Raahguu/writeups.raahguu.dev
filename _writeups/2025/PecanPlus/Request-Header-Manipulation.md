@@ -15,13 +15,13 @@ And a link was given
 ## Solution
 
 The link leads to a website looking like this
-![image](https://github.com/user-attachments/assets/139f731b-6c1e-4e5d-81f2-89988500c285)
+![403 error saying `I only trust users of the 'cheese' browser`](/assets/images.writeups_images/Request-Header-Manipulation/1.png)
 
 
 With a name like `Request Header Manipulation`, in a http/s site, it is likely that what the browser, is refering to are the request headers sent in all get requests.
 
 So, you go to `Burp` and open up the website in the proxy, before moving that into the `Repeater`.
-![image](https://github.com/user-attachments/assets/6c21033c-d953-4618-b46e-107e4e78072c)
+![An HTTP Request](/assets/images.writeups_images/Request-Header-Manipulation/2.png)
 
 The hint for this is that you need to use the `Cheese` browser, that likely refers to the `User-Agent` request header, so changing it:
 ```
@@ -46,7 +46,7 @@ Connection: keep-alive
 Note: This doesn't seem to get a reply from the server at all, but if there are two empty lines afterwards, then everything is fine?
 
 Gets the reply:
-![image](https://github.com/user-attachments/assets/6afd78ec-4b09-4352-af34-276d83108bf9)
+![403 error `I will only reply to those that accept '1337' as their language of choice`](/assets/images.writeups_images/Request-Header-Manipulation/3.png)
 
 The next hint for accepting a language, likely refers to `Accepted-Language`:
 ```
@@ -69,7 +69,7 @@ Connection: keep-alive
 ```
 
 This gets the reply:
-![image](https://github.com/user-attachments/assets/eed77140-4450-4ada-bce1-028e31737cb4)
+![403 error `I can't believe your not even going to accept a 'flag' instead of text/html or even worse */*](/assets/images.writeups_images/Request-Header-Manipulation/4.png)
 
 The next hint for accepting `flag` instead of `text/html`, that likely refers to `Accept`:
 ```
@@ -92,7 +92,7 @@ Connection: keep-alive
 ```
 
 This gets the reply:
-![image](https://github.com/user-attachments/assets/4fb8651c-f6b6-44b8-8318-8edde5f7a188)
+![403 error `If the message wasn't sent at the exact time of the Unix Epoch, then I don't care`](/assets/images.writeups_images/Request-Header-Manipulation/5.png)
 
 The hint for sending the request at the `Unix Epoch`, likely refers to `Date`:
 ```
@@ -116,9 +116,9 @@ Connection: keep-alive
 ```
 
 This gets the reply:
-![image](https://github.com/user-attachments/assets/ae84ad2d-f261-4960-8f32-24dc16aa6a9e)
+![403 error `Go rick roll yourself, then refer back to here`](/assets/images.writeups_images/Request-Header-Manipulation/6.png)
 
-The hint to `rickroll yourself` and then come back likely refers to either `Referer`, or `Origin`:
+The hint to `rickroll yourself` and then `refer` back likely refers to either `Referer`, or `Origin`:
 Lets try `Referer`, the link for rick rolling is `https://www.youtube.com/watch?v=dQw4w9WgXcQ`:
 ```
 GET / HTTP/1.1
@@ -142,7 +142,7 @@ Referer: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
 
 That works, getting the reply:
-![image](https://github.com/user-attachments/assets/907c62aa-67fb-4e1e-9f53-d7ee11ff4193)
+![403 error `Are you even going to be using an effective connection of 5g?`](/assets/images.writeups_images/Request-Header-Manipulation/7.png)
 
 The hint of using an `Effective connection`, likely refers to `Effective Connection Type` or `ECT`:
 ```
@@ -168,7 +168,7 @@ ECT: 5g
 ```
 
 This gets the reply:
-![image](https://github.com/user-attachments/assets/84f4717b-bb97-456c-8991-197994725b7e)
+![403 error `What email is this request even from?`](/assets/images.writeups_images/Request-Header-Manipulation/8.png)
 
 This hint of supplying an `Email` likely refers to the `From` header, where you can give the server an email in. There isn't a hint about what email to use, so I just made one up:
 ```

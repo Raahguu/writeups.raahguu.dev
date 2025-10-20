@@ -23,10 +23,10 @@ This hint in viewing the data in a different 'way' likely refers to in a differe
 Researching up, the two main ways to visually view audio files is through waveform and spectogram.
 Opening up `Audacity` with the file as a waveform shows:
 
-![Screenshot 2025-05-01 192152](https://github.com/user-attachments/assets/f5614af4-e297-4433-a7cf-7be05c340872)
+![Screenshot 2025-05-01 192152](/assets/images/writeups_images/LookingThroughTheSound/1.png)
 
 That didn't work so let's try the spectogram:
 
-![Screenshot 2025-05-01 192515](https://github.com/user-attachments/assets/610d88ac-d844-45e4-a0cc-adba6bead3a8)
+![Screenshot 2025-05-01 192515](/assets/images/writeups_images/LookingThroughTheSound/2.png)
 
 And from this we have the flag, just need to type it out!

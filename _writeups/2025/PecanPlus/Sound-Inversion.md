@@ -26,7 +26,7 @@ The audio sounds like whitenoise, with the occasional noise on the right channel
 
 When opening up `Sound_Inversion.wav` in an audio file editor it looks like this:
 
-![image](https://github.com/user-attachments/assets/386a95f7-f254-494b-b4e2-7fd97759cabb)
+![image](/assets/images/writeups_images/SoundInversion/1.png)
 
 As can be seen, in the right channel yet again, there appear to be occasional coloumns that are different.
 
