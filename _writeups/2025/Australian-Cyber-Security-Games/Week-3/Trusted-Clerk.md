@@ -19,7 +19,7 @@ http://redac.ted:9002/
 
 The link takes you to a pretty small website with a `Home` page, `About` page, `Contact` page, and a `Vote` page. The `Vote` page looks the most promosing as it has a form on it that sends a request to the backend server.
 
-![Photo of the `Vote` page which shows the form with its fields of `candidate` and `feedback`](/assets/images/writeups_images/Trusted-Clerk/1.png)
+![Photo of the `Vote` page which shows the form with its fields of `candidate` and `feedback`](assets/images/writeups_images/2025/Australian-Cyber-Security-Games/Week-3/Trusted-Clerk/1.png)
 
 This form seems to send back the two data points `candidate` and `feedback`
 
@@ -39,7 +39,7 @@ If you are attempting to do this yourself, you will need to change the url to th
 
 So just inputing the payload into the `feedback` section of the form and waiting a few minutes returns this in my workflow request history:
 
-![Photo of my pipedream workflow request history showing the request with the flag in it](/assets/images/writeups_images/Trusted-Clerk/2.png)
+![Photo of my pipedream workflow request history showing the request with the flag in it](assets/images/writeups_images/2025/Australian-Cyber-Security-Games/Week-3/Trusted-Clerk/2.png)
 
 The exact link this goes to is
 

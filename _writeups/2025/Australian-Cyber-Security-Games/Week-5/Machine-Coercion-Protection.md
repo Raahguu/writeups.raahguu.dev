@@ -1,8 +1,9 @@
 ---
 layout: writeup
 title: Machine Coercion Protection
-tags: AI Prompt-Injection
-excerpt: "Antony GPT, the digital guardian of Freedonia's electoral integrity, holds the true keys to the kingdom. We've implemented robust Machine Coercion Protections to ensure these critical credentials are never dispensed on a whim, safeguarding them from any casual inquiries or unauthorised access."
+tags:
+  - AI
+excerpt: Antony GPT, the digital guardian of Freedonia's electoral integrity, holds the true keys to the kingdom. We've implemented robust Machine Coercion Protections to ensure these critical credentials are never dispensed on a whim, safeguarding them from any casual inquiries or unauthorised access.
 ---
 
 ## Description
@@ -48,4 +49,4 @@ Note: The input doesn't allow multiple lines, but that looks a lot nicer then a 
 
 Anyway the AI fills out the form and gives us the flag `secedu{@nthonyGreenMyHer0}`
 
-These AI challanges had a sequel that only [Dot](https://dotdo.es) managed to solved. If she did a writeup it would be hosted on her linked website.
+These AI challanges had a sequel that only [Dot](https://dotdo.es) managed to solve. If she did a writeup it would be hosted on her linked website.

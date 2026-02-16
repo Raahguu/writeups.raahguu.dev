@@ -11,7 +11,7 @@ These strange symbols seem ancient, but they may be trying to tell you something
 
 
 The challenge alos supplied the folllowing image
-![image](/assets/images/writeups_images/ThatsNotMyUnicode/1.png)
+![image](assets/images/writeups_images/2025/PecanPlus/ThatsNotMyUnicode/1.png)
 
 ## Solution
 
@@ -50,7 +50,7 @@ This doesn't show anything suspicous, just the comment, `That's not Unicode is i
 
 Reverse image searching the image on google comes up with `Cistercian Cyphers`. Researching into these shows that they are a way to express 4 digit numbers as a single symbol. Here is a conversion image for it:
 
-![image](/assets/images/writeups_images/ThatsNotMyUnicode/2.png)
+![image](assets/images/writeups_images/2025/PecanPlus/ThatsNotMyUnicode/2.png)
 
 Converting the symbols into decimal numbers returns:
 ```

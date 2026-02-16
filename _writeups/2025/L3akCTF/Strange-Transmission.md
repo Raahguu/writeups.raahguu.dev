@@ -1,8 +1,9 @@
 ---
 layout: writeup
 title: Strange Transmission
-tags: Hardware-RF
-excerpt: "I received this strange transmission and I'm not sure what to make of it! Weird beeps, static noise, then silence. Can you help me figure out what it all means?"
+tags:
+  - Steg
+excerpt: I received this strange transmission and I'm not sure what to make of it! Weird beeps, static noise, then silence. Can you help me figure out what it all means?
 ---
 
 ## Description
@@ -35,17 +36,17 @@ This proved to me that the transimssion, was definitely more code, and that I am
 
 So I opened up the file in `Audacity` to view the `spectrogram`, this allowed me to visually see the morse code rather then having to listen to it. Note, I did need to slow down the speed of the wav file to about 10%.
 
-![Spectrogram of a Wav file that shows dots and dashes, and also has embedded text at the end](/assets/images/writeups_images/Strange-Transmission/full.png)
+![Spectrogram of a Wav file that shows dots and dashes, and also has embedded text at the end](assets/images/writeups_images/2025/L3akCTF/Strange-Transmission/1.png)
 
 This image also shows that there is an image that contains text that has been embeded into the spectrogram.
 
 Here is a close up of some morsecode so you can see what I read:
 
-![Some morse code in a wav file shown through the spectrogram](/assets/images/writeups_images/Strange-Transmission/morse.png)
+![Some morse code in a wav file shown through the spectrogram](assets/images/writeups_images/2025/L3akCTF/Strange-Transmission/2.png)
 
 And here is a closeup of that text at the end of the spectrogram, slowed down to 10% speed, so that text is legible.
 
-![Hidden text that was at the end of the spetrogram, that says `c4teg0ry_w3_h0p3_you_h4ve_fun!}`](/assets/images/writeups_images/Strange-Transmission/Stegmessage.png)
+![Hidden text that was at the end of the spetrogram, that says `c4teg0ry_w3_h0p3_you_h4ve_fun!}`](assets/images/writeups_images/2025/L3akCTF/Strange-Transmission/3.png)
 
 This text reveals what appears to be the ending half of the flag
 
@@ -74,7 +75,7 @@ Seven Beats of silence = the space between words
 
 If you want to translate it yourself, here is a chart that shows the morse code to english mapping
 
-![Chart that displays a mapping/how to translate from morse code to english letters or vice versa](/assets/images/writeups_images/Strange-Transmission/morseCodeChart.png)
+![Chart that displays a mapping/how to translate from morse code to english letters or vice versa](assets/images/writeups_images/2025/L3akCTF/Strange-Transmission/4.png)
 
 The translated message ending up being (avert your eyes if you don't want spoilers!!)
 

@@ -1,8 +1,10 @@
 ---
 layout: writeup
 title: Root Detection is the least of our problems but let's have it anyway
-tags: Mobile Rev Android
-excerpt: "In an attempt to implement security best practices, the mobile developers has implemented a root detection mechanism. Can you identify all the binaries that they check for? The flag may or may not be in that list :)" 
+tags:
+  - Mobile
+  - Rev
+excerpt: In an attempt to implement security best practices, the mobile developers has implemented a root detection mechanism. Can you identify all the binaries that they check for? The flag may or may not be in that list :)
 ---
 
 As this challenge was the only one about reverse enginering the binary, I put the action of finding the domain that all the other challenges use within this writeup as well

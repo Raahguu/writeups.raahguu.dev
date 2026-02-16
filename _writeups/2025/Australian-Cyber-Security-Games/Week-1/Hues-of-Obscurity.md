@@ -11,7 +11,7 @@ An unusual signal has been intercepted — its contents painted in mystery. Decr
 
 
 Attatched Image
-![Hexahue Cipher image](/assets/images/writeups_images/Hues-of-Obscurity/HexaHues.png)
+![Hexahue Cipher image](assets/images/writeups_images/2025/Australian-Cyber-Security-Games/Week-1/Hues-of-Obscurity/1.png)
 
 ## Solution
 

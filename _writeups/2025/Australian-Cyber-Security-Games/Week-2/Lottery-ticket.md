@@ -1,8 +1,9 @@
 ---
 layout: writeup
 title: Lottery ticket
-tags: Net
-excerpt: "The leader of the Centrist Union, Alyssa Chen knows that a political career is a life full of gambles. To remind herself of how much luck plays a part in her political fortunes she buys a ticket in the Freedonia State Lottery every month. This month she left a copy of her ticket on the Centrist Union's office server. Can you find the ticket and repeat the numbers back to her?"
+tags:
+  - Net
+excerpt: The leader of the Centrist Union, Alyssa Chen knows that a political career is a life full of gambles. To remind herself of how much luck plays a part in her political fortunes she buys a ticket in the Freedonia State Lottery every month. This month she left a copy of her ticket on the Centrist Union's office server. Can you find the ticket and repeat the numbers back to her?
 ---
 
 ## Warning
