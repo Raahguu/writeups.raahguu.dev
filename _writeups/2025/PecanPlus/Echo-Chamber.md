@@ -14,7 +14,7 @@ I found this weird service that just replies back with whatever you send it, its
 
 Connecting to the challenge through nc, gets you:
 
-![image of an nc into the program where any input you give is repetead back to you](assets/images/writeups_images/2025/PecanPlus/Echo-Chamber/1.png)
+![image of an nc into the program where any input you give is repetead back to you](/assets/images/writeups_images/2025/PecanPlus/Echo-Chamber/1.png)
 
 This is a screen, where you can type whatever text you want, and then a copy of that text is replied.
 
@@ -49,4 +49,4 @@ As there is no conventional way to alter the memory address after `local_28` (th
 As such merely inputing 16 of any character, and then the string `givemeflag` should return the flag.
 Inputing `aaaaaaaaaaaaaaaagivemeflag`, returns the flag `pecan{533_buff3r_0v3rf70w_c4n_b3_345y!}`
 
-![Image of the correct text where the payload was injected and the flag returned](assets/images/writeups_images/2025/PecanPlus/Echo-Chamber/2.png)
+![Image of the correct text where the payload was injected and the flag returned](/assets/images/writeups_images/2025/PecanPlus/Echo-Chamber/2.png)

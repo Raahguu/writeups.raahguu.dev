@@ -152,7 +152,7 @@ Trying to go straight for the flag we get
 
 `https://web-philtered-0a2005e5b9bf.2025.ductf.net/?config[path]=../flag.php`
 
-![picture of the website showing how instead of reading out flag.php, we got the text `You've just been philtered!`](assets/images/writeups_images/2025/DownUnder/Philtered/2.png)
+![picture of the website showing how instead of reading out flag.php, we got the text `You've just been philtered!`](/assets/images/writeups_images/2025/DownUnder/Philtered/2.png)
 
 This just has the text `You've just been philtered` Note: that text is the contents of the `data/philtered.txt`
 
@@ -183,7 +183,7 @@ So by just adding `allow_unsafe=true` into the query, we can now go to whatever 
 `https://web-philtered-0a2005e5b9bf.2025.ductf.net/?allow_unsafe=true&config[path]=../flag.php`
 
 
-![picture of the website showing their being nothing in the area where we control the content](assets/images/writeups_images/2025/DownUnder/Philtered/3.png)
+![picture of the website showing their being nothing in the area where we control the content](/assets/images/writeups_images/2025/DownUnder/Philtered/3.png)
 
 
 The website should be loading in `flag.php` yet nothing is there. This is becuase the `flag.php` file is being loaded in, but as it isn't actual html code or normal text, it is instead being loaded in as a comment, so by viewing the html code you can see

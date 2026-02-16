@@ -27,7 +27,7 @@ The audio sounds like whitenoise, with the occasional noise on the right channel
 
 When opening up `Sound_Inversion.wav` in an audio file editor it looks like this:
 
-![image](assets/images/writeups_images/2025/PecanPlus/SoundInversion/1.png)
+![image](/assets/images/writeups_images/2025/PecanPlus/SoundInversion/1.png)
 
 As can be seen, in the right channel yet again, there appear to be occasional coloumns that are different.
 

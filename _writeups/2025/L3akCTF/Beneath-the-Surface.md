@@ -52,15 +52,15 @@ So I downloaded `fldigi` and used it to decrypt the message, here's how you do i
 
 1. Download fldigi, I cant help you here as I don't know your OS
 2. Open it up and up the top click `Op Mode`, then `WEFAX`, and finally `WEFAX-IOC576`. This tells fldigi to decrypt your file as a WEFAX576 transmission.
-![Image of fldigi GUI, where the menu `Op Mode` has been selected, then `WEFAX`, showing the `WEFAX-IOC576` option](assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/1.png)
+![Image of fldigi GUI, where the menu `Op Mode` has been selected, then `WEFAX`, showing the `WEFAX-IOC576` option](/assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/1.png)
 
 3. Click `file`, `Audio`, and then `playback`
-![Image of fldigi GUI where the menu `file` and then the submenu `Audio` have been selected in order to show the `playback` option](assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/2.png)
+![Image of fldigi GUI where the menu `file` and then the submenu `Audio` have been selected in order to show the `playback` option](/assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/2.png)
 
 4. In the new window, select the WEFAX file. You can then click yes to looping if you want, anyway, after the audio file is over the image will disappear
 5. Wait about 6 minutes for the image to be drawn, it should be drawn pixel by pixel left to right top to bottom, so the entire top row is drawn left to right, then the next row down, and the next row down etc.
 
 6. There's your flag
-![Image of the transmitted image that contains the flag in diagonal text accross it](assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/3.png)
+![Image of the transmitted image that contains the flag in diagonal text accross it](/assets/images/writeups_images/2025/L3akCTF/Beneath-the-Surface/3.png)
 
 And thats you done. The final flag was `L3AK{R4diOF4X_1S_G00d_4_ImAG3_Tr4nsM1sSiON}`

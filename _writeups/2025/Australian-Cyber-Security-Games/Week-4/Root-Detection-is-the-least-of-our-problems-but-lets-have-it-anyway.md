@@ -35,7 +35,7 @@ Please report this file to one of following link if possible (any one).
     dex2jar@googlegroups.com
 ```
 
-Looking at the java files tells me some useful info, namely, that this is actually a react app, and as such I am not looking at the actual code as react apps are coded in javascript, not java. But we can find the compiled js code in `assets/index.android.bundle`
+Looking at the java files tells me some useful info, namely, that this is actually a react app, and as such I am not looking at the actual code as react apps are coded in javascript, not java. But we can find the compiled js code in `/assets/index.android.bundle`
 
 ```bash
 $ file index.android.bundle

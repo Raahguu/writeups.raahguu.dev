@@ -50,7 +50,7 @@ Next, I installed the ghidra `golang` extension and this allowed me to see that 
 - /app/main.go
 - /app/interactor/game_logic.go
 - /app/entity/game_state.go
-![](assets/images/writeups_images/2026/C2C-qualifiers/Rick/1.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/Rick/1.png)
 
 
 
@@ -115,7 +115,7 @@ But, when assigning it to rick's health, it gets converted into an `int4`, from 
 
 ### Time to try out the program
 Creating an instance and going to it on the index page you can enter a `Secret` and a `Battle Cry`.
-![](assets/images/writeups_images/2026/C2C-qualifiers/Rick/2.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/Rick/2.png)
 
 Passing in the environment variable from before:
 ```bash
@@ -124,7 +124,7 @@ SECRET_PHRASE=Morty_Is_The_Real_One
 ```
 
 as the `Secret Key` and then trying for SSTI just `{{ . }}` as the `Battle Cry`
-![](assets/images/writeups_images/2026/C2C-qualifiers/Rick/3.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/Rick/3.png)
 
 That ended up outputing the return of `rick/router.String`
 
@@ -140,7 +140,7 @@ Battle Cry:
 The port number is `8080` becuase `main.main` reveals that internally the service runs on port `8080` even if externally the port is different.
 
 This request then reveals something:
-![](assets/images/writeups_images/2026/C2C-qualifiers/Rick/4.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/Rick/4.png)
 
 The request worked, his health overflowed and we got the flag
 ```flag

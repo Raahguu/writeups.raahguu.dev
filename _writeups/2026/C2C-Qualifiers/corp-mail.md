@@ -111,13 +111,13 @@ Interestingly, the `FLAG` environment variable does not show up here, but the `J
 We can then forge a JWT token with the `user_id` of `4` as that is `mike`'s `user_id` (I found this through brute forcing `0`, `1`, `2`, and `3`).
 
 I like using [jwt.io](https://www.jwt.io/), but it is up to you how to forge your JWT token
-![](assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/3.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/3.png)
 
 We can then save this value as the `token` cookie for the website and then go to `inbox
-![Image of the inbox revealing to emails called 'Q4 Budget Review', and 'Confidential: System Credentials'](assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/4.png)
+![Image of the inbox revealing to emails called 'Q4 Budget Review', and 'Confidential: System Credentials'](/assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/4.png)
 
 Obviously the email to choose is the one called 'Confidential: System Credentials', and reading it reveals the flag:
-![](assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/5.png)
+![](/assets/images/writeups_images/2026/C2C-qualifiers/corp-mail/5.png)
 
 The flag is:
 ```flag
