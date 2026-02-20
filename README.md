@@ -1,3 +1,5 @@
+This repo has been archived as my writeups have moved to https://raahguu.dev which is a hugo site
+
 # writeups.raahguu.dev 
 This is my Github Pages site, hosted at [writeups.raahguu.dev](https://writeups.raahguu.dev)
 
